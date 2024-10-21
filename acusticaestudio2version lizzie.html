@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio de acustica</title>
+</head>
+<body>
+    <script>
+        alert("Vamos a estudiar Acústica 😎");
+        alert("¿Qué ítem querés estudiar 🤓?");
+        let continuar = true;
+        
+        while (continuar) {
+            
+            let mensaje = Number(prompt("1. Reflexión 2. Refracción 3. Absorción 4. Difracción 5. Eco 6. Reverberación 7. Ruido 8. Escala temperada igual 9. Escala diatonica justa 10. Escala Pitagórica 11. Comparación de escalas"));
+
+            if (mensaje == 1) {
+                alert("Reflexión:\n Rebote del sonido sobre una superficie rígida: el ángulo de reflexión es igual al ángulo de incidencia");
+            } else if (mensaje == 2) {
+                alert("Refracción:\n Refracción es el cambio de dirección que sufre la onda cuando varían las propiedades del medio en el cual se propaga");
+            } else if (mensaje == 3) {
+                alert("Absorción:\n Es parte de la energía no reflejada cuando la onda sonora incide sobre una superficie rígida");
+            } else if (mensaje == 4) {
+                alert("Difracción:\n Es cuando la onda sonora incide sobre un obstáculo");
+            } else if (mensaje == 5) {
+                alert("Eco:\nLas primeras reflexiones generales se denominan ecos y se escuchan de manera clara");
+            } else if (mensaje == 6) {
+                alert("Reverberación:\nLa caída del sonido después de que la fuente se calla, es lo que se denomina reverberación");
+            } else if (mensaje == 7) {
+                alert("Ruido:\nEs la compleja mezcla de sonidos, de alturas y timbres diferentes. El ruido es por lo general desagradable");
+                alert("Tipos de ruido:\nRuido Blanco 🏳: Todas las frecuencias audibles con la misma intensidad\nRuido Rosa 🎀: Disminuye 3dB cada octava\nRuido Rojo 🔴: Se da en frecuencias graves y medias, y disminuye 6dB por octava");
+            } else if(mensaje == 8){
+                alert("Escala temperada igual:\nCaracterísticas: \nIntervalos iguales:\nEn esta escala, la octava está dividida en 12 partes iguales (semitonos) en una progresión geométrica. Cada semitono tiene exactamente la misma relación de frecuencia.\n")
+                alert("Proporciones:\nLa proporción de frecuencia entre dos notas adyacentes es la raíz 12 de 2 (aproximadamente 1.05946), lo que asegura que todas las quintas, terceras y demás intervalos estén ligeramente ajustados para permitir que cualquier nota pueda ser utilizada como tónica.")
+                alert("Ventaja:\nPermite tocar en cualquier tonalidad sin que haya diferencias perceptibles en la afinación de los intervalos entre diferentes tonalidades.")
+                alert("Uso:\n Predominante en la actualidad: La escala temperada igual es la más utilizada hoy en día en prácticamente todos los instrumentos occidentales (piano, guitarra, orquesta). Es el estándar en la música clásica, pop, rock, jazz, y casi cualquier género que utilice afinaciones fijas.")
+
+            } else if(mensaje == 9){
+                alert("Escala diatónica justa:\nCaracterísticas:\nAjustada a la armonía natural:\nEstá basada en las proporciones naturales de los armónicos, con terceras y quintas justas. Los intervalos entre notas son fracciones simples de números enteros, como 5:4 para la tercera mayor o 3:2 para la quinta perfecta.")
+                alert(" Afinación justa:\nEn esta escala, las terceras mayores y menores, las quintas y otros intervalos tienen proporciones exactas, lo que los hace más consonantes y agradables acústicamente. Sin embargo, no todas las notas de la escala se ajustan bien entre sí, lo que provoca problemas al cambiar de tonalidad.")
+                alert("Desventaja:\nAunque es ideal para ciertas tonalidades, resulta difícil de usar en todas las tonalidades sin que algunas notas suenen 'desafinadas'. Este fenómeno se llama comas.")
+                alert("Uso:\nMenos común hoy en día: Se utiliza principalmente en música coral a capella y en algunas formas de música antigua. No es adecuada para instrumentos con afinación fija como el piano o la guitarra, pero es utilizada en conjuntos donde se puede ajustar la afinación de forma continua, como cuartetos de cuerdas o voces.")
+                alert("Uso:\nMenos común hoy en día: Se utiliza principalmente en música coral a capella y en algunas formas de música antigua. No es adecuada para instrumentos con afinación fija como el piano o la guitarra, pero es utilizada en conjuntos donde se puede ajustar la afinación de forma continua, como cuartetos de cuerdas o voces.")
+
+            } else if(mensaje == 10){
+                alert(" Escala pitagórica:\nCaracterísticas:\nBasada en quintas perfectas:\nEsta escala se construye apilando quintas perfectas (relación de 3:2), lo que da como resultado una afinación en la que las quintas son puras, pero las terceras son ligeramente desafinadas.")
+                alert("Afinación natural:\nAl estar tan centrada en quintas perfectas, las terceras (especialmente las mayores) son más agudas que en la afinación justa o temperada, lo que puede generar incomodidad en la música moderna.")
+                alert("Desventaja:\nNo es adecuada para tonalidades con muchas alteraciones, ya que los intervalos pueden sonar discordantes.")
+                alert("Uso:\nHistórico:\nSe utilizaba en la música antigua, en la época de Pitágoras y en los primeros sistemas musicales de la Edad Media. Hoy en día, es más común en estudios de historia de la música y en la recreación de música medieval o renacentista.")
+            } else if(mensaje == 11){
+                alert("Comparación y cuál se usa hoy en día:\nEscala temperada igual:\nEs la más utilizada en la actualidad. Te permite tocar en todas las tonalidades sin problemas de afinación. Es la que encuentras en prácticamente cualquier piano, guitarra o instrumento afinado occidentalmente.")
+                alert("Escala diatónica justa:\nAunque acústicamente pura y hermosa en algunas tonalidades, no se adapta bien a las modulaciones o cambios de tonalidad. Se usa principalmente en música coral o cuartetos de cuerdas.")
+                alert("Escala pitagórica:\nImportante en la historia de la música, pero poco práctica hoy en día. Se usa en estudios históricos y en música antigua.")
+                alert("Conclusión:\nHoy en día, la escala temperada igual es la más utilizada, ya que permite flexibilidad tonal y es la afinación estándar para la mayoría de los instrumentos.")
+            }
+             else {
+                alert("Opción no válida 😅. probá un número del 1 al 11.");
+            }
+
+            continuar = confirm("¿Queres estudiar otro ítem? 👨‍🏫");
+        }
+
+        alert("No te desanimes😁! Fuerza 💪");
+        
+    </script>
+</body>
+</html>
